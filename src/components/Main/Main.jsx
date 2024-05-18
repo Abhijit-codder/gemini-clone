@@ -12,7 +12,7 @@ const Main = () => {
     <div className='main'>
         <div className="nav">
             <p>Gemini</p>
-            <img src='https://lh3.google.com/u/0/ogw/AF2bZyjONPljSNxXNhGfltQPGN751keYY6OvVo3hKbpK5c7P7A=s64-c-mo' alt=""/>
+            <img src='https://lh3.googleusercontent.com/a/ACg8ocJB_Ax1fin_iFTv3Y-N5cjH7dkJky03ztDacJSAHGEh_cfO9OwC=s432-c-no' alt=""/>
         </div>
         <div className="main-container">
 
@@ -45,6 +45,14 @@ const Main = () => {
           
           </>
           :<div className='result'>
+            <div className="result-title">
+              <img src='https://lh3.googleusercontent.com/a/ACg8ocJB_Ax1fin_iFTv3Y-N5cjH7dkJky03ztDacJSAHGEh_cfO9OwC=s432-c-no' alt=""/>
+              <p>{recentPrompt}</p>
+            </div>
+            <div className="result-data">
+              <img src={assets.gemini_icon} alt=""/>
+              <p dangerouslySetInnerHTML={{__html:resultData}}></p>
+            </div>
             
           </div>
 
